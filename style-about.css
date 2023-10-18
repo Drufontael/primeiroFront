@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./assets/mobile_about\ 1.png), lightgray 50% / cover no-repeat;
+
+  height: 100vh;
+}
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0px 24px;
+}
+#description {
+  text-align: center;
+  width: 332px;
+}
+#description p {
+  color: #fefefe;
+  text-align: justify;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%; /* 16.5px */
+  letter-spacing: -0.242px;
+}
+@media (min-width: 400px) {
+  body {
+    background: url(/assets/desktop-about\ 1.png),
+      lightgray 50% / cover no-repeat;
+  }
+  #description {
+    width: 680px;
+    text-align: right;
+  }
+}
