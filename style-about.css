@@ -37,4 +37,7 @@ body {
     width: 680px;
     text-align: right;
   }
+  #description p {
+    font-size: 20px;
+  }
 }
