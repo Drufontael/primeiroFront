@@ -5,23 +5,30 @@
 }
 body {
   background: black;
+  text-align: center;
 }
 #container {
   display: inline-flex;
-  border: 1px solid red;
   width: 100%;
-  max-width: 588px;
+  max-width: 360px;
   flex-direction: row;
   text-align: center;
 }
 #container img {
-  display: inline-block;
-  border: 1px solid blue;
+  display: inline-flex;
+  width: 196px;
+  height: 434px;
+  flex-shrink: 0;
+  margin-left: 20px;
+  margin-top: 192px;
 }
 #description {
-  display: inline-block;
+  display: inline-flex;
   width: 200px;
-  border: 1px solid green;
+  position: absolute;
+  margin-left: 142px;
+  margin-top: 156px;
+  z-index: 1;
 }
 #description p {
   color: #fff;
