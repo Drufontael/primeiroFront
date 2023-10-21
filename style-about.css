@@ -4,40 +4,32 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./assets/mobile_about\ 1.png), lightgray 50% / cover no-repeat;
-
-  height: 100vh;
+  background: black;
 }
 #container {
+  display: inline-flex;
+  border: 1px solid red;
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
-  padding: 0px 24px;
+  flex-direction: row;
+  text-align: center;
+}
+#container img {
+  display: inline-block;
+  border: 1px solid blue;
 }
 #description {
-  text-align: center;
-  width: 332px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid green;
 }
 #description p {
-  color: #fefefe;
+  color: #fff;
   text-align: justify;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Inter;
   font-size: 11px;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 150%; /* 16.5px */
-  letter-spacing: -0.242px;
-}
-@media (min-width: 400px) {
-  body {
-    background: url(/assets/desktop-about\ 1.png),
-      lightgray 50% / cover no-repeat;
-  }
-  #description {
-    width: 680px;
-    text-align: right;
-  }
-  #description p {
-    font-size: 20px;
-  }
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
