@@ -1,30 +1,220 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="./style-about.css" />
-  </head>
-  <body>
-    <div id="container">
-      <img src="./assets/minha-image.png" alt="Imagem de Edu vestido de preto">
-      <div id="description">
-        <p>
-          Olá, meu nome é Eduardo. Sou um gaúcho morando em Goiás, entusiasta por tecnologia e programação, que depois de duas décadas atuando na área industrial, decidiu embarcar em uma emocionante jornada de transição para o mundo do desenvolvimento de software.<br> 
-          Estou começando meu portifólio para compartilhar minhas experiências e projetos.<br>
-          Estou ansioso para as oportunidades
-          que o futuro me reserva e para conectar-me com outros entusiastas de
-          tecnologia e desenvolvedores de software.
-        </p>
-        
-      </div>
-    </div>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Estigarribia - Desenvolvedor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Fauna+One&family=Outfit:wght@400;700&family=Spectral+SC:ital,wght@0,300;0,500;1,300;1,500&family=Yrsa:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --background-header-footer: #a6343f;
+      --background-section-color: #e45a4f;
+      --background-body-color: #e9afa3;
+      --background-hover: #5f2c2c;
+      --font-header: "Spectral SC";
+      --font-subheader: "Fauna One";
+      --font-body: "Yrsa"
+    }
+
+    body {
+      font-family: var(--font-body), 'Arial', sans-serif;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: var(--background-body-color);
+      color: #f3efef;
+    }
+
+    div {
+      margin-bottom: 100px;
+    }
+
+    header {
+      background-color: var(--background-header-footer);
+      color: #f3efef;
+      font-family: var(--font-header);
+      text-align: center;
+      padding: 2em;
+      position: fixed;
+      top: 0;
+      height: 175px;
+      width: 100%;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: var(--background-section-color);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2,
+    h3 {
+      font-family: var(--font-subheader);
+      color: #f3efef;
+    }
+
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    a {
+      color: #f3efef;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: var(--background-header-footer);
+      color: #f3efef;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .logo-drufontael {
+
+      height: 150%;
+    }
+
+
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      margin: 0.5em;
+      padding: 0.5em 1em;
+      background-color: var(--background-header-footer);
+      color: #f3efef;
+      border-radius: 4px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .contact-btn {
+      background-color: var(--background-section-color);
+      color: #f3efef;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-btn:hover {
+      background-color: var(--background-hover);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <img src="./assets/DrufontaelLogo.png" class="logo-drufontael rounded float-start" alt="logo drufontael">
+    <h1>Eduardo Estigarribia</h1>
+    <p>Desenvolvedor | Java | Back-End | ADS</p>
+  </header>
+
+
+  <section style="margin-top: 200px;">
+    <h2>Sobre Mim</h2>
+    <p>
+      Transformando ferramentas em código! Sou Eduardo Estigarribia, ex-técnico mecânico que encontrou sua paixão no
+      mundo
+      do desenvolvimento. Com um histórico de resiliência, aprendi a confiar menos nas circunstâncias e mais em minha
+      capacidade de superar desafios. Minha jornada inclui experiência com o framework Spring Boot e uma sede constante
+      por conhecimento em Java, Python, JavaScript, HTML e CSS. Estou determinado a contribuir para projetos inovadores
+      e desafiantes, buscando constantemente melhorar minhas habilidades e conhecimentos.
+    </p>
+  </section>
+
+  <section>
+    <h2>Hobbies e Interesses</h2>
+    <p>
+      Além do mundo do código, encontro equilíbrio em diversas paixões. Sou um entusiasta de ciências, particularmente
+      fascinado por astronomia e história evolutiva. Em meu tempo livre, gosto de explorar novos destinos, alimentando
+      minha curiosidade por diferentes culturas e gastronomias. Como um amante de livros, sempre há uma leitura em
+      andamento,
+      expandindo meus horizontes. Estes são os elementos que tornam minha jornada única e me inspiram a trazer uma
+      perspectiva diversificada para o universo da programação.
+    </p>
+  </section>
+
+  <section class="skills-container">
+    <h2>Soft Skills</h2>
+    <ul>
+      <li class="skill">Comunicação Clara e Eficiente</li>
+      <li class="skill">Trabalho em Equipe e Colaboração</li>
+      <li class="skill">Resolução Criativa de Problemas</li>
+      <li class="skill">Adaptabilidade e Flexibilidade</li>
+      <li class="skill">Empatia e Respeito pelas Diversidades</li>
+    </ul>
+  </section>
+
+  <section class="skills-container">
+    <h2>Habilidades e Interesses</h2>
+    <ul>
+      <li class="skill">Desenvolvimento Back-End</li>
+      <li class="skill">Java | Python | JavaScript</li>
+      <li class="skill">Lógica de Programação</li>
+      <li class="skill">Framework Spring Boot</li>
+      <li class="skill">Interesse em Banco de Dados e Ciência de Dados</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projetos Destacados</h2>
+    <ul>
+      <li><a href="#">Barber Easy</a> - Sistema de agendamento para barbearias</li>
+      <li><a href="#">Nome do Projeto 2</a> - Breve Descrição</li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom: 150px;">
+    <h2>Objetivo Profissional</h2>
+    <p>
+      Meu objetivo como desenvolvedor é ir além de simplesmente escrever código. Busco participar ativamente do
+      ciclo de vida do desenvolvimento de software, desde a concepção até a entrega, aplicando meu conhecimento
+      técnico. Tenho paixão por construir soluções eficientes e inovadoras que não apenas atendam às necessidades dos
+      usuários, mas que também inspirem e facilitem suas vidas. Almejo integrar
+      equipes dinâmicas, onde a colaboração e a aprendizagem contínua sejam valores fundamentais, visando meu
+      crescimento profissional e contribuição significativa para projetos desafiadores.
+    </p>
+  </section>
+
+
+
+  <footer>
+    <p>Quer saber mais sobre mim ou meu trabalho? Vamos conversar! 📬 <button class="contact-btn"
+        onclick="window.location.href='mailto:edu@drufontael.com '">Entre em Contato</button></p>
+  </footer>
+
+</body>
+
 </html>
